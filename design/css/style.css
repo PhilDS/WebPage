@@ -112,7 +112,7 @@ br{
 
 .close:hover { background:  black;}
 
-.modalWindow {
+.about {
   position: fixed;
   z-index: 99999;
   top: 0;
@@ -127,19 +127,19 @@ br{
   pointer-events: none;
 }
 
-.modalWindow:target {
+.about:target {
   opacity:1;
   pointer-events: auto;
 }
  
-.modalWindow:target > div {
+.about:target > div {
   margin: 10% auto;
   transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
 }
  
-.modalWindow > div {
+.about > div {
   max-width: 400px;
   position: relative;
   margin: 1% auto;
@@ -168,7 +168,7 @@ a{
 	padding-left:3em
 }
 
-.modalWindow > div section { padding:15px;}
+.about > div section { padding:15px;}
 
 .circular {
 	float: right;
