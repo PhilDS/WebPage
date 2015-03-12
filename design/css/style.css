@@ -1,3 +1,4 @@
+/* Fonts conf */
 @font-face 
 {
     font-family: Font1thin;
@@ -26,7 +27,16 @@
     font-family: Font3;
     src: url('../fonts/OldStandard-Italic.ttf') format('truetype');
 }
+/* End of fonts conf */
 
+/** Image-links conf **/
+/* Common parameters */
+img {
+	width:27px;
+	height:27px;
+	border:none;
+}
+	
 .lien
 {
 	text-decoration: none;
@@ -34,9 +44,27 @@
 	outline:none;
 }
 
-br{
- height:20px; visibility:hidden; margin-bottom:-1px;
-}
+.lienimage{position:absolute; background: white;}
+
+.lienimage:hover{opacity:0;}
+
+/* Specific prameters */
+/*Change the background color when "hoved" */
+.lienimagelinkedhov{background:#007FB1;}
+
+.lienimageviadeohov{background-color:#F4982B;}
+
+.lienimagegithov{background-color:#4183C4;}
+
+.lienimagegphov{background-color:#DD4B39;}
+
+.lienimagetwitterhov{background-color:#DD4B39;}
+
+.lienimageabouthov{background-color:#00405D;}
+/** End of image-links conf **/
+
+/* Content parameters (main data) */
+br{height:20px; visibility:hidden; margin-bottom:-1px;}
 
 .ligne
 {
@@ -54,10 +82,7 @@ br{
 	text-align:center;
 }
 
-.lliens
-{
-	margin: -0.1em 0 0 0;
-}
+.lliens{margin: -0.1em 0 0 0;}
 
 .nom
 {
@@ -78,10 +103,10 @@ br{
 	font-size: 20px;
 	margin: 0.2em 0 0 0;
 }
+/* End of content parameters */
 
 
-/* Modal parameters */
-
+/* Modal window parameters */
 .content {
 	font-family: Font1regular;
 	font-size: 15px;
@@ -110,7 +135,7 @@ br{
 	box-shadow: 1px 1px 3px #000;
 }
 
-.close:hover { background:  black;}
+.close:hover {background:black;}
 
 .about {
   position: fixed;
@@ -158,9 +183,7 @@ h2 {
   margin-bottom: 0; 
 }
 
-a{
- font-family: Font1regular;
-}
+a{font-family: Font1regular;}
 
 .source{
 	text-decoration: none;
