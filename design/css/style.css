@@ -36,21 +36,46 @@ img {
 	height:27px;
 	border:none;
 }
-	
-.lien
+
+
+.lien{display:inline-block;}
+
+.lienimage
 {
-	text-decoration: none;
-	border:none;
-	outline:none;
+	position:absolute; 
+	background: white; 
+	display:inline;
 }
 
-.lienimage{position:absolute; background: white;}
+.lienimage:hover
+{
+	text-decoration: none;
+	border-style:none;
+	outline-style:none;
+	opacity:0;
+ /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 
-.lienimage:hover{opacity:0;}
+  /* IE 5-7 */
+  filter: alpha(opacity=0);
+
+  /* Netscape */
+  -moz-opacity: 0;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0;
+}
+
+a, .lien, .lienimage, .lliens 
+{
+	text-decoration: none;
+	border-style:none;
+	outline-style:none;
+}
 
 /* Specific prameters */
 /*Change the background color when "hoved" */
-.lienimagelinkedhov{background:#007FB1;}
+.lienimagelinkedhov{background:#007FB1;border-style:none; outline-style:none;}
 
 .lienimageviadeohov{background-color:#F4982B;}
 
@@ -79,7 +104,8 @@ br{height:20px; visibility:hidden; margin-bottom:-1px;}
 {
     width: 100%;
 	height: 100%;
-	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .lliens{margin: -0.1em 0 0 0;}
@@ -158,7 +184,7 @@ br{height:20px; visibility:hidden; margin-bottom:-1px;}
 }
  
 .about:target > div {
-  margin: 10% auto;
+  margin: 15% auto;
   transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
