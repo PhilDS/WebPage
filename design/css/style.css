@@ -218,14 +218,4 @@ a{font-family: Font1regular;}
 }
 
 .about > div section { padding:15px;}
-
-.circular {
-	float: right;
-	width: 60px;
-	height: 60px;
-	border-radius: 30px;
-	border-radius: 30px;
-	-moz-border-radius: 30px;
-	background: url(../images/Philippe.png) no-repeat;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
